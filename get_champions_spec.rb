@@ -2,6 +2,11 @@ require 'rspec'
 require_relative 'get_champions'
 
 RSpec.describe "#get_champions" do
+  context "when there are no players" do
+    let(:players) { [] }
+    it { expect(get_champions(players)).to eq(players) }
+  end
+
   context "when there is only one player in the list" do
     let(:players) {
       [

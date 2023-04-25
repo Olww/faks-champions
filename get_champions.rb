@@ -1,17 +1,3 @@
-# { name: "Alice", age: 25, elo: 2100 }
-# { name: "Bob", age: 30, elo: 2300 }
-# { name: "Charlie", age: 20, elo: 2000 }
-# { name: "David", age: 25, elo: 2250 }
-# { name: "Emily", age: 28, elo: 2250 }
-# { name: "Frank", age: 18, elo: 1950 }
-# { name: "George", age: 25, elo: 2100 }
-# { name: "Hannah", age: 20, elo: 2000 }
-# { name: "Isaac", age: 30, elo: 2300 }
-# { name: "Julia", age: 25, elo: 2200 }
-# { name: "Kate", age: 28, elo: 2250 }
-# { name: "Liam", age: 18, elo: 1950 }
-
-# compare each player with the ones that come before them in the sorted list
 def get_champions(players = [])
   return players if players.empty?
 

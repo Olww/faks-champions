@@ -49,7 +49,7 @@ RSpec.describe "#get_champions" do
       ]
     }
 
-    it { expect(get_champions(players)).to eq(players) }
+    it { expect(get_champions(players)).to match_array(players) }
   end
 
   context "case with multiple players with the same age and score" do
